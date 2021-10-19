@@ -6,3 +6,5 @@ let pokemonRepository = (function() {
     {name:"Blastoise", height:1.6, type:['water',]},
     {name:"Fearow", height:1.2, type:['flying',"normal"]},
     ];
+    }
+    )
