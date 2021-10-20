@@ -1,0 +1,26 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.page-header {
+  display: flex;
+  height: 65px;
+  background-color: darkorange;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.logo {
+  margin-left: 25px;
+  color: white;
+}
+
+.pokemonList {
+  color: white;
+  background-color: aqua;
+  padding: 12px 16px;
+  max-width: 250px;
+  font-weight: bold;
+  border-radius: 10px;
+}
