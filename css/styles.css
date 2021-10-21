@@ -13,14 +13,5 @@
 
 .logo {
   margin-left: 25px;
-  color: white;
-}
-
-.pokemonList {
-  color: white;
-  background-color: aqua;
-  padding: 12px 16px;
-  max-width: 250px;
-  font-weight: bold;
-  border-radius: 10px;
+  color: greenyellow;
 }
