@@ -15,3 +15,12 @@
   margin-left: 25px;
   color: greenyellow;
 }
+
+.pokemon-name {
+  background-color: cornflowerblue;
+  color: greenyellow;
+  max-width: 160px;
+  padding: 12px 16px;
+  border-radius: 7px;
+  text-align: center;
+}
