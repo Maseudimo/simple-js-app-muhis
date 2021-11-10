@@ -48,7 +48,7 @@ let pokemonRepository = (function () {
      function getAll() {
        return repository;
      }
-     
+
      function addListItem(pokemon){
    let pokemonList = document.querySelector(".pokemon-list");
    let listpokemon = document.createElement("li");
@@ -66,7 +66,6 @@ let pokemonRepository = (function () {
 
   })();
 
-// for each function to write pokemon and its name/height/type
-  pokemonRepository.getAll().forEach(function(pokemon){
-  document.write( '<p class="whole-info">' + '<h2 class="pokemon-name">' + pokemon.name + '</h2>' + ' (Height: ' + pokemon.height + '\), ' + ' Types: ' + pokemon.types + '</p> <br>');
-});
+  pokemonRepository.getAll().forEach(function (pokemon) {
+    pokemonRepository.addListItem(pokemon);
+  });
