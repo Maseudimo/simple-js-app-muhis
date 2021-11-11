@@ -1,5 +1,5 @@
-let pokemonRepository = (function () {
-  let pokemonList = [
+var pokemonRepository = (function () {
+  var pokemonList = [
 
  {
    name:'Zekrom',
@@ -20,39 +20,34 @@ let pokemonRepository = (function () {
    weight:400,
    types:["Steel","Ground"]},
 
- {
-   name:"Houndour",
-   height:0.6,
-   weight:10.8,
-   types:["Dark","Fire"]},
 
- {
-   name:"Nidoking",
-   height:1.4,
-   weight:62,
-   types:["Ground","Poison"]
- }
-   ];
 
+];
+   //adds pokemon to the pokedex
    function getAll () {
-     return pokemonList;
- }
- function add(pokemon) {
-     pokemonList.push(pokemon);
- }
- function addListItem (pokemon) {
-     let pokemonList = document.querySelector('.pokemon-list');
-     let listPokemon = document.createElement('li');
-     let button = document.createElement('button');
-     button.innerText = pokemon.name;
-     button.classList.add('button-class')
-     listPokemon.appendChild(button);
-     pokemonList.appendChild(listPokemon);
-     button.addEventListener('click', showDetails (pokemon));
- }
+   return pokemonList;
+}
+function add(pokemon) {
+   pokemonList.push(pokemon);
+}
+
+ function addListItem(pokemon) {
+    let listContainer = document.querySelector('.pokemon-list');
+    let listItem = document.createElement('li');
+    let button = document.createElement('button');
+    button.innerText = pokemon.name;
+    button.classList.add('poke-button');
+    listItem.appendChild(button);
+    listContainer.appendChild(listItem);
+    button.addEventListener('click', showDetails (pokemon));
+        button.addEventListener('click', function() {
+            showDetails(pokemon)
+        });
+    }
 
  function showDetails(pokemon) {
      console.log (pokemon);
+
  }
 
  return {
