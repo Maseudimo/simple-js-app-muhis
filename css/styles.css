@@ -14,12 +14,12 @@
 		border:  2px solid black;
 }
 body {
-	background-color: #357b70;
+	background-color: #e6e600;
 }
 .pokeHead {
 	font-family: "Lato", sans-serif;
 	text-align: center;
-	background-color: #e0b354;
+	background-color: #999900;
   border-radius: 75%;
   border: 2px solid black;
 }
