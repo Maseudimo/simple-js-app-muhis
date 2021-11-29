@@ -1,51 +1,103 @@
-.btn {
-		background-color: #e0b354;
-		color: black;
-		padding: 16px 32px;
-		text-align: center;
-		text-transform: capitalize;
-		text-decoration: none;
-		display: inline-block;
-		font-size: 16px;
-		margin: 4px 2px;
-		-webkit-transition-duration: 0.4s;
-		transition-duration: 0.4s;
-		cursor: pointer;
-		border:  2px solid black;
-}
-body {
-	background-color: #e6e600;
-}
-.pokeHead {
-	font-family: "Lato", sans-serif;
+.pokemonButton {
+	background-color: #d9aca9;
+	color: black;
+	padding: 22px 32px;
+	width: 190px;
 	text-align: center;
-	background-color: #999900;
-  border-radius: 75%;
-  border: 2px solid black;
+	vertical-align: middle;
+	text-transform: capitalize;
+	text-decoration: none;
+	align-items: center;
+	display: inline-block;
+	font-size: 22px;
+	margin: 6px 2px;
+	-webkit-transition-duration: 0.4s;
+	transition-duration: 0.4s;
+	cursor: pointer;
+	border:  6px #4c4c52;
 }
+
+body {
+	background-color: #a3691c;
+}
+
+.navbar-brand {
+	font-size: 22px;
+}
+
+.navbar-toggler {
+	color: black;
+	text-align: center;
+	border: 2px solid black;
+}
+
 ul {
-text-align: center;
-list-style-type: none;
+
 margin-top: 90px;
 }
 
+.pokemon-list {
+		background-color: #a3691c;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+		text-align: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.list-group-item {
+		background-color: #a3691c;
+		text-align: center;
+}
+
 .modal-content {
-  background: #e0b354;
-  padding: 15px;
+
+  background: ##ac59ff;
+  padding: 22px;
   text-align: center;
   text-transform: capitalize;
 }
 
 .navbar {
-  background: #e0b354;
+  background: #8a3a17;
 }
 
 .navbar-brand {
   color: black;
 }
 
-@media all and (max-width: 500px) {
-.pokeList {
-		max-width: 450px;
+#btn-back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
 }
+
+.btn-danger {
+		background-color: #8a3a17;
+		color: black;
+		border: 5px solid black;
+}
+
+.btn-secondary {
+	background-color: #8a3a17;
+}
+
+@media all and (max-width: 500px) {
+	.list-group-item {
+		max-width: 200px;
+	}
+
+	.btn {
+		align-items: center;
+		position: relative;
+		right: 20px;
+	}
+
+	.container-list {
+		text-align: center;
+	}
 }
